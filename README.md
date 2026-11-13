@@ -2,8 +2,9 @@
 
 30초 · 16:9 모션 그래픽 광고. 폰 피드 속 로드스터 사진이 화면 밖으로 튀어나와 현실이 되고, 하늘 장면으로 이어집니다.
 
-**영상 보기:** https://claude.ai/artifact/HnsoyskU85HNgd2qX4zu8G
-(Claude Motion 플레이어에서 재생됩니다. 페이지의 Export로 MP4 저장 가능)
+**영상 보기:**
+- `index.html` — 단독 실행 HTML. 내려받아 브라우저로 열면 바로 재생됩니다 (사진·음악 포함, 폰트만 Google Fonts에서 불러옴). 스페이스바/클릭으로 재생·정지.
+- Claude 페이지: https://claude.ai/artifact/HnsoyskU85HNgd2qX4zu8G (Export로 MP4 저장 가능)
 
 ## 구성 (30초)
 
@@ -17,6 +18,9 @@
 | 6 | End card | 4s | Roadster · Production planned for 2028 |
 
 ## 파일
+
+- `index.html` — 단독 실행 버전 (`python3 tools/build.py`로 modules에서 다시 생성)
+- `tools/player.html`, `tools/build.py` — 플레이어 템플릿과 빌드 스크립트
 
 - `modules/scenes.json` — 장면 목록, 팔레트, 폰트
 - `modules/base.css`, `modules/shared.js` — 공통 스타일과 드로잉

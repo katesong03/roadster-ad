@@ -23,6 +23,7 @@ kit.scene('sky', {
       '<div class="sky-car" style="position:absolute;inset:0">' + W.car(kit, 'sky-cut') + '</div>' +
       '<svg class="art sky-near" viewBox="0 0 1920 1080">' + W.clouds(kit, 19, 6, 930, 120, 'var(--second)') + '</svg>' +
       '<p class="tag" style="right:60px;top:50px;color:var(--ink)">Concept visualization</p>' +
+      '<div class="sky-calm" style="position:absolute;left:-300px;top:-250px;width:1700px;height:950px;background:radial-gradient(closest-side, color-mix(in srgb, var(--skytop) 94%, transparent) 60%, transparent)"></div>' +
       '<div class="words" style="left:110px;top:110px;width:1000px"><h2 class="line sky-l" style="color:var(--ink)">Where will you go?</h2><p class="sub sky-s" style="color:var(--ink)">Imagine the commute above it all.</p></div></div>'));
     const q = (s) => kit.stage.querySelector(s);
     Object.assign(this, { far: q('.sky-far'), near: q('.sky-near'), car: q('.sky-car'), line: q('.sky-line'), l: q('.sky-l'), s: q('.sky-s'), sun: q('.sky-sun') });
