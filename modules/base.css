@@ -1,0 +1,12 @@
+#stage { --ground:#0A0C10; --main:#E8DCC8; --second:#F7F5F0; --accent:#E2252B; color:var(--second); font-family:var(--sans, system-ui, sans-serif);
+  --sand:color-mix(in srgb, var(--main) 85%, var(--ground)); --skytop:color-mix(in srgb, var(--second) 55%, #5E86B8); --skylow:color-mix(in srgb, var(--second) 82%, var(--main)); --glass:color-mix(in srgb, var(--second) 10%, var(--ground)); --card:color-mix(in srgb, var(--second) 16%, var(--ground)); --mute:color-mix(in srgb, var(--second) 55%, var(--ground)); --ink:color-mix(in srgb, var(--ground) 90%, var(--main)) }
+.ground { position:absolute; inset:0; background:var(--ground); overflow:hidden }
+.words { position:absolute; margin:0; display:flex; flex-direction:column; gap:18px } .words > * { margin:0 }
+.line { font-family:var(--display, var(--sans, system-ui, sans-serif)); font-size:150px; line-height:1; font-weight:700; letter-spacing:-0.03em }
+.sub { font-size:40px; font-weight:400 }
+.photo { position:absolute; left:0; top:-100px; width:1920px; height:1279px; display:block }
+.carcut { clip-path:polygon(37.8% 40.9%, 40% 35.7%, 47.3% 28%, 63.6% 26.7%, 76.4% 28.1%, 85.5% 30.6%, 85.3% 40.9%, 82.3% 46.7%, 79.1% 49.1%, 66.8% 50.5%, 58.2% 50.8%, 42.7% 49.4%, 38% 47.5%) }
+.art { position:absolute; inset:0; width:100%; height:100%; overflow:visible }
+.small { font-size:26px; color:var(--mute); letter-spacing:.02em }
+.tag { position:absolute; font-size:24px; letter-spacing:.14em; text-transform:uppercase; padding:8px 16px; border:2px solid currentColor; border-radius:999px }
+.edge { position:absolute; inset:0; background:radial-gradient(95% 85% at 50% 50%, transparent 60%, rgba(0,0,0,.45)) }
